@@ -1,0 +1,15 @@
+[package]
+name = "lap_fib_rs"
+version = "0.1.0"
+authors = ["Phu La <la_phu@yahoo.com>"]
+edition = "2018"
+
+[dependencies]
+
+[dependencies.pyo3]
+version = "0.17.3"
+features = ["extension-module"]
+
+[lib]
+name = "lap_fib_rs"
+crate-type = ["rlib", "cdylib"]
