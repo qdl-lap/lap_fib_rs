@@ -7,7 +7,6 @@ fn say_hello() {
     println!("saying hello from Rust!");
 }
 
-
 #[pymodule]
 fn lap_fib_rs(_py: Python, m: &PyModule) -> PyResult<()> {
     match m.add_wrapped(wrap_pyfunction!(say_hello)) {

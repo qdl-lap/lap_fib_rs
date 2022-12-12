@@ -1,1 +1,1 @@
-from lap_fib_rs import *
+from .lap_fib_rs import *
