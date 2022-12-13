@@ -18,8 +18,8 @@ fn lap_fib_rs(_py: Python, m: &PyModule) -> PyResult<()> {
     //     Err(e) => println!("{:?}", e),
     //     _ => ()
     // }
-    m.add_wrapped(wrap_pyfunction!(say_hello));
-    m.add_wrapped(wrap_pyfunction!(fibonacci_number));
-    m.add_wrapped(wrap_pyfunction!(fibonacci_numbers));
+    m.add_function(wrap_pyfunction!(say_hello));
+    m.add_function(wrap_pyfunction!(fibonacci_number));
+    m.add_function(wrap_pyfunction!(fibonacci_numbers));
     Ok(())
 }
